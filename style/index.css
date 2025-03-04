@@ -1,8 +1,9 @@
 /* Global Styles */
-* {
+* { 
     text-decoration: none;
 }
 
+/*
 body {
     background-color: #121212;
     font-family: papyrus;
@@ -16,7 +17,7 @@ hr {
     padding: 3px;
 }
 
-/* Header & Navigation */
+// Header & Navigation
 #header {
     padding-top: 50px;
     margin-bottom: 0px;
@@ -31,7 +32,7 @@ hr {
     background-image: url("../images/Sticky.png");
 }
 
-/* Images */
+// Images
 #me {
     float: right;
     width: 325px;
@@ -52,7 +53,7 @@ hr {
     margin-top: -70px;
 }
 
-/* Text Styles */
+// Text Styles
 h1 {
     text-align: center;
     font-size: 200%;
@@ -70,12 +71,12 @@ h5 {
     text-align: right;
 }
 
-/* List Items */
+// List Items
 li {
     margin: 0 70px 0 750px;
 }
 
-/* Links */
+// Links
 a:link.click {
     color: red;
     margin: 0 35px;
@@ -97,9 +98,11 @@ a:visited.click, a:visited.link {
     color: purple;
 }
 
-/* Footer */
+// Footer
 footer {
     text-align: center;
     margin: -15px 0 -30px 0;
     font-size: 75%;
 }
+
+*/
