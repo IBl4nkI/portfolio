@@ -2,43 +2,75 @@
     text-decoration: none;
 }
 
-/*
 body {
-    background-color: #121212;
-    font-family: papyrus;
-    font-size: 200%;
+    background-color: #09122C;
     color: white;
 }
 
-hr {
-    background-color: purple;
-    margin: 0 100px 50px 100px;
-    padding: 3px;
-}
-    */
-
-.header {
+h1 {
     text-align: center;
-    padding-top: 50px;
-    margin-bottom: 0px;
     font-size: 300%;
 }
-/*
-#nav {
-    margin: 0 0 60px 0;
-    font-size: 110%;
-    position: sticky;
-    top: 0px;
-    background-image: url("../images/Sticky.png");
+
+h2 {
+    text-align: center;
+    font-size: 200%;
 }
 
-// Images
-#me {
-    float: right;
-    width: 325px;
-    height: 325px;
-    margin-right: 120px;
+.header {
+    padding-top: 8rem;
+    text-align: left;
+    font-size: 300%;
+    margin-left: 5rem;
 }
+
+#me {
+    display: block;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sticky {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+    margin-top: -1rem;
+    margin-bottom: 5rem;
+    text-align: left;
+    font-size: 200%;
+    position: sticky;
+    top: 0px;
+    background-color: #BE3144;
+}
+
+#nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 100%;
+}
+
+a:link, a:visited {
+    color: white;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+
+
+/*
+// Images
+
 
 #hand {
     float: left;
@@ -86,17 +118,7 @@ a:link.link {
     color: red;
 }
 
-a:hover.click, a:hover.link {
-    color: yellow;
-}
 
-a:active.click, a:active.link {
-    color: white;
-}
-
-a:visited.click, a:visited.link {
-    color: purple;
-}
 
 // Footer
 footer {
