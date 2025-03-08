@@ -6,10 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
         gyroControls: false,
         minHeight: 200.00,
         minWidth: 200.00,
-        highlightColor: 0x460000,
+        highlightColor: 0x0,
         midtoneColor: 0x0,
         lowlightColor: 0x0,
-        baseColor: 0x2a2525,
+        baseColor: 0x373737,
         blurFactor: 0.29,
         speed: 0.00
     });
