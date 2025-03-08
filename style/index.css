@@ -2,8 +2,12 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #09122C;
+    background-color: #1f1f1f;
     color: white;
 }
 
@@ -18,15 +22,13 @@ h2 {
 }
 
 .header {
-    padding-top: 8rem;
-    text-align: left;
     font-size: 300%;
-    margin-left: 5rem;
+    margin-left: 2rem;
 }
 
 #me {
     display: block;
-    width: 15%;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -38,10 +40,10 @@ h2 {
     margin-top: -1rem;
     margin-bottom: 5rem;
     text-align: left;
-    font-size: 200%;
+    font-size: 175%;
     position: sticky;
     top: 0px;
-    background-color: #BE3144;
+    background-color: #111111;
 }
 
 #nav {
@@ -49,9 +51,15 @@ h2 {
     padding-right: 1rem;
 }
 
-.paragraph {
+.page {
+    background-color: #0b0b0b;
+    padding: 2rem;
+    margin: 5rem auto;
+    width: 70%;
+    border: 2px solid #FFF;
+    border-radius: 10px;
     text-align: center;
-    font-size: 100%;
+    font-size: 125%;
 }
 
 a:link, a:visited {
