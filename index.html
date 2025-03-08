@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>[Bl4nk]</title>
+        <title>Adrian Echepari</title>
+
         <link rel="stylesheet" href="./style/index.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@latest/dist/vanta.fog.min.js"></script>
     </head>
     <body>
+        <div id="background"></div>
+        <script src="background.js"></script>
+
         <a id="A0"></a>
         <h1 class="sticky">
             <a id="nav" href="#Tech_Stack"> Tech Stack </a>
@@ -24,12 +31,7 @@
         <a id="Tech_Stack">&nbsp</a>
         <div class="page" id="Tech_Stack">
             <h1 class="header"> Tech Stack </h1>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
+
         </div>
         
         <a id="Certifications">&nbsp</a>
@@ -54,5 +56,23 @@
         <br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
         
+        <script src="three.r134.min.js"></script>
+        <script src="vanta.fog.min.js"></script>
+        <script>
+        VANTA.FOG({
+        el: "#your-element-selector",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        highlightColor: 0x460000,
+        midtoneColor: 0x0,
+        lowlightColor: 0x0,
+        baseColor: 0x2a2525,
+        blurFactor: 0.29,
+        speed: 0.00
+        })
+        </script>
     </body>
 </html>
