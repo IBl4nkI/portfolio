@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Adrian Echepari</title>
 
         <link rel="stylesheet" href="./style/index.css">
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@latest/dist/vanta.fog.min.js"></script>
+
+        <style>
+            .container {
+                position: relative;
+                width: 600px;
+                height: 400px;
+            }
+            .logo {
+                position: absolute;
+                transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            }
+            .android-studio {
+                width: 80px;
+                left: 250px;
+                top: 50px;
+            }
+            .kotlin, .java {
+                width: 60px;
+                opacity: 0;
+            }
+            .kotlin {
+                left: 250px;
+                top: 50px;
+            }
+            .java {
+                left: 250px;
+                top: 50px;
+            }
+            .container:hover .kotlin {
+                transform: translate(-100px, 150px);
+                opacity: 1;
+            }
+            .container:hover .java {
+                transform: translate(0px, 150px);
+                opacity: 1;
+            }
+        </style>
     </head>
     <body>
         <div id="background"></div>
@@ -77,8 +117,11 @@
         <a id="Certifications">&nbsp</a>
         <div class="page">
             <h1> Certifications </h1>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="container">
+                <img src="./images/android_studio.png" alt="Android Studio" class="logo android-studio">
+                <img src="./images/kotlin.png" alt="Kotlin" class="logo kotlin">
+                <img src="./images/java.png" alt="Java" class="logo java">
+            </div>
         </div>
         
         <a id="Contact_Info">&nbsp</a>
