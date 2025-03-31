@@ -10,53 +10,6 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@latest/dist/vanta.fog.min.js"></script>
-
-        <style>
-            .tech_stack-container {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 20px;
-                width:100%;
-            }
-            .container {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                position: relative;
-                flex-wrap: wrap;
-                width: 250px;
-            }
-            .logo {
-                width: 100px;
-                height: auto;
-                transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-                z-index: 1;
-            }
-            .container:hover .logo {
-                transform: scale(1.1); /* Slight enlargement on hover */
-            }       
-            .ide {
-                width: 165px;
-                left: 150px;
-            }
-            .kotlin, .java, .html, .css, .js, .c {
-                opacity: 0;
-                transform: translateY(20px); /* Start slightly lower */
-                transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-            }
-            .container:hover .kotlin,
-            .container:hover .java,
-            .container:hover .html,
-            .container:hover .css,
-            .container:hover .js,
-            .container:hover .c {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        </style>
     </head>
     <body>
         <div id="background"></div>
@@ -126,25 +79,7 @@
          
         <a id="Certifications">&nbsp</a>
         <div class="page">
-            <h1 id="tech_stack"> Certifications </h1>
-            <div class="tech_stack-container">
-                <div class="container">
-                    <img src="./images/android_studio.png" alt="Android Studio" class="logo ide">
-                    <img src="./images/kotlin.png" alt="Kotlin" class="logo kotlin">
-                    <img src="./images/java.png" alt="Java" class="logo java">
-                </div>
-                <div class="container">
-                    <img src="./images/netbeans.png" alt="Netbeans" class="logo ide">
-                    <img src="./images/java.png" alt="Java" class="logo java">
-                    <img src="./images/c.png" alt="C" class="logo c">
-                </div>
-                <div class="container">
-                    <img src="./images/visual_studio.png" alt="Visual Studio" class="logo ide">
-                    <img src="./images/html.png" alt="HTML" class="logo html">
-                    <img src="./images/css.png" alt="CSS" class="logo css">
-                    <img src="./images/js.png" alt="JS" class="logo js">
-                </div>
-            </div>
+            <h1> Certifications </h1>
         </div>
         
         <a id="Contact_Info">&nbsp</a>
