@@ -8,7 +8,7 @@ html {
 
 body {
     background-color: transparent;
-    /*try other fonts*/
+    font-family: 'Montserrat', sans-serif;
     /*background-color: #1f1f1f;*/
     margin: 0px;
     color: white;
@@ -25,7 +25,7 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 300%;
+    font-size: 250%;
 }
 
 #tech_stack {
@@ -36,7 +36,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 200%;
+    font-size: 165%;
 }
 
 #me {
@@ -88,49 +88,8 @@ a:active {
     color: red;
 }
 
-.icon-container {
-    position: relative;
-    display: inline-block;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
-}
-
-.hover-text {
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    font-family: Papyrus;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7);
-    margin-top: 5rem;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.icon-container:hover .hover-text {
-    visibility: visible;
-    opacity: 1;
-}
-
-.icon {
-    width: 165px;
-    transition: width 0.3s ease-in-out;
-}
-
-.icon:hover {
-    width: 200px;
-}
-
 /*
 
-// Footer
 footer {
     text-align: center;
     margin: -15px 0 -30px 0;
