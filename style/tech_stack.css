@@ -26,11 +26,6 @@ body {
 h1 {
     text-align: center;
     font-size: 300%;
-}
-
-#tech_stack {
-    text-align: center;
-    font-size: 300%;
     margin-bottom: 1rem;
 }
 
@@ -113,12 +108,12 @@ a:active {
 }
 
 .icon {
-    width: 130px;
+    width: 135px;
     transition: width 0.3s ease-in-out;
 }
 
 .icon:hover {
-    width: 163px;
+    width: 170px;
 }
 
 /*
