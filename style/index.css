@@ -31,25 +31,31 @@ h1 {
 
 #me {
     display: block;
-    width: 230px;
+    width: 100%;
+    max-width: 300px;
     margin-top: 8.5rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 4rem;
+    border-radius: 50%;
     border: 1px solid white;
+    object-fit: cover;
 }
 
 .sticky {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1.5rem;
     margin-top: -1rem;
     margin-bottom: 0rem;
     text-align: left;
-    font-size: 175%;
+    font-size: clamp(1rem, 2vw, 1.75rem);
     position: sticky;
-    top: 0px;
-    background-color: #111111;
+    top: 0;
+    background-color: #111;
     z-index: 1000;
 }
 
@@ -63,6 +69,7 @@ h1 {
     padding: 2rem;
     margin: 4rem auto;
     width: 60%;
+    max-width: 1200px;
     border: 2px solid #FFF;
     border-radius: 10px;
     text-align: center;
@@ -81,12 +88,25 @@ a:active {
     color: red;
 }
 
-/*
-
-footer {
-    text-align: center;
-    margin: -15px 0 -30px 0;
-    font-size: 75%;
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+    .page {
+        font-size: 1rem;
+        padding: 1rem;
+    }
 }
 
-*/
+@media (max-width: 1100px) {
+    .sticky {
+        justify-content: center;
+        text-align: center;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-left: 0;
+        margin-top: -1rem;
+        margin-bottom: 0rem;
+    }
+}
