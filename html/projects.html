@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Adrian Echepari | Projects</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../style/projects.css">
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta@latest/dist/vanta.fog.min.js"></script>
+    </head>
+    <body>
+        <div id="background"></div>
+        <script src="../javascript/background.js"></script>
+
+        <nav class="navbar navbar-expand-md sticky-top px-3 custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <span class="d-none d-md-inline">Homepage</span> <!-- Visible on md and up -->
+                    <i class="fas fa-home d-inline d-md-none"></i>   <!-- Visible below md -->
+                </a>
+                <!-- Hamburger toggle -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon d-none"></span> <!-- Hide default -->
+                    <span class="custom-icon">&#9776;</span> <!-- Unicode hamburger -->
+                </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../html/about-me.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/tech-stack.html">Tech Stack</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../html/certifications.html">Certifications</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Top">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="page">
+            <h1> Projects </h1>
+            <p style="position: relative; z-index: 10">
+                <a href="https://drive.google.com/drive/folders/1X8O_Ocgw4PVqyAmesR3EDOUnWOChEFou?usp=drive_link" target="_blank">
+                    (Click Here for Full View)
+                </a>
+            </p>
+
+            <div class="folder-row">
+                <div class="folder" data-folder-id="1WF-1Elchbb11KqAE2YXoyOpLjgdlbx4v">
+                    <img src="../images/folder-icon.png" alt="Web Development and Design">
+                    <p>Software Development</p>
+                </div>
+                <div class="folder" data-folder-id="1bFcCFjzJGRzxYS7KV7qlHUfv12kW-_iQ">
+                    <img src="../images/folder-icon.png" alt="Video Editing and Film Production">
+                    <p>Video Editing and Film Production</p>
+                </div>
+            </div>
+
+            <div class="iframe-container">
+                <iframe id="driveFrame"
+                    src="https://drive.google.com/embeddedfolderview?id=1X8O_Ocgw4PVqyAmesR3EDOUnWOChEFou#grid"
+                    width="100%" height="600" frameborder="0">
+                </iframe>
+            </div>
+            <a href="https://ibl4nki.github.io/12TWEchepariAdrian/" target="_blank"><h2>My First Website</h2></a>
+        </div>
+
+        <script>
+            function loadFolder(folderId) {
+                const iframe = document.getElementById("driveFrame");
+                iframe.src = `https://drive.google.com/embeddedfolderview?id=${folderId}#grid`;
+            }
+        
+            document.querySelectorAll(".folder").forEach(folder => {
+                folder.addEventListener("click", () => {
+                    const folderId = folder.getAttribute("data-folder-id");
+                    if (folderId) {
+                        loadFolder(folderId);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
