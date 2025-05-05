@@ -79,44 +79,16 @@ h1 {
 }
 
 @media (max-width: 320px) {
-    .icon {
-        width: clamp(25px, 6vw, 55px);
-    }
-    .icon:hover {
-        width: clamp(35px, 7vw, 75px);
-    }
-    .icon-container {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        margin-bottom: 1.5rem;
-    }
-    .hover-text {
-        font-size: 0.5rem;
-    }
     .page {
         width: 90%;
         padding: 1rem;
     }
     h1 {
-        font-size: 150%;
+        font-size: clamp(100%, 5vw, 180%);
     }
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
-    .icon {
-        width: clamp(30px, 6vw, 120px);
-    }
-    .icon:hover {
-        width: clamp(40px, 7vw, 150px);
-    }
-    .icon-container {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 1.5rem;
-    }
-    .hover-text {
-        font-size: 0.65rem;
-    }
     .page {
         width: 80%;
     }
@@ -131,14 +103,5 @@ h1 {
     }
     h1 {
         font-size: 250%;
-    }
-    .hover-text {
-        font-size: 1rem;
-    }
-    .icon {
-        width: clamp(55px, 7vw, 90px);
-    }
-    .icon:hover {
-        width: clamp(65px, 8.5vw, 115px);
     }
 }
