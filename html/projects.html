@@ -45,46 +45,30 @@
 
         <div class="page">
             <h1> Projects </h1>
-            <p style="position: relative; z-index: 10">
-                <a href="https://drive.google.com/drive/folders/1X8O_Ocgw4PVqyAmesR3EDOUnWOChEFou?usp=drive_link" target="_blank">
-                    (Click Here for Full View)
-                </a>
-            </p>
 
             <div class="folder-row">
-                <div class="folder" data-folder-id="1WF-1Elchbb11KqAE2YXoyOpLjgdlbx4v">
-                    <img src="../images/folder-icon.png" alt="Web Development and Design">
-                    <p>Software Development</p>
-                </div>
-                <div class="folder" data-folder-id="1bFcCFjzJGRzxYS7KV7qlHUfv12kW-_iQ">
-                    <img src="../images/folder-icon.png" alt="Video Editing and Film Production">
-                    <p>Video Editing and Film Production</p>
-                </div>
+                <a href="https://drive.google.com/drive/folders/1WF-1Elchbb11KqAE2YXoyOpLjgdlbx4v?usp=drive_link" target="_blank">
+                    <div class="folder">
+                        <img src="../images/folder-icon.png" alt="Web Development and Design">
+                        <p>Software Development</p>
+                    </div>
+                </a>
+                <a href="https://drive.google.com/drive/folders/1bFcCFjzJGRzxYS7KV7qlHUfv12kW-_iQ?usp=drive_link" target="_blank">
+                    <div class="folder">
+                        <img src="../images/folder-icon.png" alt="Video Editing and Film Production">
+                        <p>Video Editing and Film Production</p>
+                    </div>
+                </a>
             </div>
-
-            <div class="iframe-container">
-                <iframe id="driveFrame"
-                    src="https://drive.google.com/embeddedfolderview?id=1X8O_Ocgw4PVqyAmesR3EDOUnWOChEFou#grid"
-                    width="100%" height="600" frameborder="0">
-                </iframe>
+            
+            <div class="first-website">
+                <a href="https://ibl4nki.github.io/12TWEchepariAdrian/" target="_blank">
+                    <div>
+                        <img src="../images/first-website.png" alt="My First Website" style="margin-bottom: 15px">
+                        <p>My First Website<p>
+                    </div>
+                </a>
             </div>
-            <a href="https://ibl4nki.github.io/12TWEchepariAdrian/" target="_blank"><h2>My First Website</h2></a>
         </div>
-
-        <script>
-            function loadFolder(folderId) {
-                const iframe = document.getElementById("driveFrame");
-                iframe.src = `https://drive.google.com/embeddedfolderview?id=${folderId}#grid`;
-            }
-        
-            document.querySelectorAll(".folder").forEach(folder => {
-                folder.addEventListener("click", () => {
-                    const folderId = folder.getAttribute("data-folder-id");
-                    if (folderId) {
-                        loadFolder(folderId);
-                    }
-                });
-            });
-        </script>
     </body>
 </html>
