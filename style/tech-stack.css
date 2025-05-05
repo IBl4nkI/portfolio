@@ -57,8 +57,8 @@ h1 {
     background-color: rgba(11, 11, 11, 0.69);
     padding: 2rem clamp(2rem, 1vw, 5rem);
     margin: 4rem auto;
-    width: clamp(60%, 10vw, 50%);
-    max-width: 60%;
+    width: 90%;
+    max-width: 800px;
     border: 2px solid #FFF;
     border-radius: 10px;
     text-align: center;
@@ -66,29 +66,41 @@ h1 {
     overflow-x: hidden;
 }
 
-.icon-container {
-    position: relative;
-    display: inline-block;
-    margin-left: 2.43rem;
-    margin-right: 2.43rem;
-    margin-bottom: 2.5rem;
+.icon-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+.tech-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
 }
-
+  
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+.icon {
+    width: 120px;
+    height: auto;
+    transition: width 0.3s ease-in-out;
+}
+  
 .hover-text {
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    font-family: Papyrus;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.7);
-    margin-top: 5rem;
+    margin-top: 0.5rem;
+    background-color: #000;
     color: white;
-    padding: 5px 10px;
+    padding: 0.2rem 0.5rem;
     border-radius: 5px;
-    font-size: 14px;
-    white-space: nowrap;
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
+    font-size: 0.9rem;
 }
 
 .icon-container:hover .hover-text {
@@ -96,75 +108,75 @@ h1 {
     opacity: 1;
 }
 
-.icon {
-    width: clamp(70px, 10vw, 135px);
-    transition: width 0.3s ease-in-out;
-}
-
 .icon:hover {
-    width: clamp(135px, 10vw, 170px);
+    width: clamp(130px, 10vw, 142px);
 }
 
 @media (max-width: 320px) {
     .icon {
-        width: clamp(25px, 15vw, 105px);
+        width: 60px;
     }
     .icon:hover {
-        width: clamp(35px, 16vw, 125px);
-    }
-    .icon-container {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        margin-bottom: 1.5rem;
+        width: 75px;
     }
     .hover-text {
-        font-size: 0.5rem;
+        font-size: 0.55rem;
     }
     .page {
-        width: 90%;
+        width: 75%;
         padding: 1rem;
     }
     h1 {
-        font-size: 150%;
+        font-size: 160%;
+    }
+    .tech-row {
+        gap: 1rem;
+    }
+    .icon-grid {
+        margin-top: 1rem;
     }
 }
 
 @media (min-width: 321px) and (max-width: 768px) {
     .icon {
-        width: clamp(30px, 15vw, 120px);
+        width: 70px;
     }
     .icon:hover {
-        width: clamp(40px, 16vw, 150px);
-    }
-    .icon-container {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-bottom: 1.5rem;
+        width: 90px;
     }
     .hover-text {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
     .page {
         width: 80%;
+        padding: 1.5rem;
     }
     h1 {
-        font-size: clamp(100%, 6vw, 180%);
+        font-size: 200%;
+    }
+    .tech-row {
+        gap: 1.5rem;
     }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
+    .icon {
+        width: 85px;
+    }
+    .icon:hover {
+        width: 105px;
+    }
+    .tech-row {
+        gap: 2rem;
+    }
+    .hover-text {
+        font-size: 0.75rem;
+    }
     .page {
-        width: clamp(75%, 1vw, 60%);
+        width: 75%;
+        padding: 2rem;
     }
     h1 {
         font-size: 250%;
-    }
-    .hover-text {
-        font-size: 1rem;
-    }
-    .icon {
-        width: clamp(55px, 7vw, 90px);
-    }
-    .icon:hover {
-        width: clamp(65px, 8.5vw, 115px);
     }
 }
