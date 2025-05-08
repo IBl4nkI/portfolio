@@ -149,8 +149,7 @@ a:active {
     .page {
         font-size: 0.85rem;
         padding: 1rem;
-        width: 95%;
-        margin: 2rem auto;
+        width: 80%;
         overflow: hidden;
     }
     .folder-row {
@@ -189,7 +188,7 @@ a:active {
 
 @media (min-width: 321px) and (max-width: 768px) {
     .page {
-        width: 60%;
+        width: 70%;
     }
     h1 {
         font-size: 2rem;
@@ -201,13 +200,34 @@ a:active {
         gap: 30px;
     }
     .folder img {
-        width: 75px;
+        width: 80px;
     }
     .folder p {
         font-size: 0.85rem;
+        text-align: center;
     }
     .first-website img {
         width: 250px;
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.75rem;
+        margin-bottom: 1.5rem;
+    }
+    .page {
+        width: 60%;
+    }
+    .folder-row {
+        gap: 80px;
+    }
+    .folder img {
+        width: 85px;
+    }
+    .first-website img {
+        width: 325px;
     }
 }
 
@@ -232,24 +252,5 @@ a:active {
     .navbar {
         position: relative;
         z-index: 1050;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    h1 {
-        font-size: 275%;
-        margin-bottom: 1.5rem;
-    }
-    .page {
-        width: 50%;
-    }
-    .folder-row {
-        gap: 100px;
-    }
-    .folder img {
-        width: 90px;
-    }
-    .first-website img {
-        width: 325px;
     }
 }
