@@ -108,7 +108,7 @@ h1 {
 }
 
 .icon:hover {
-    width: clamp(130px, 10vw, 142px);
+    width: clamp(130px, 10vw, 135px);
 }
 
 @media (max-width: 320px) {
