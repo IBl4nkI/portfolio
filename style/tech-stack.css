@@ -138,13 +138,13 @@ h1 {
 
 @media (min-width: 321px) and (max-width: 768px) {
     .icon {
-        width: 70px;
+        width: clamp(50px, 25vw, 200px);
     }
     .icon:hover {
-        width: 90px;
+        width: 230px;
     }
     .hover-text {
-        font-size: 9px;
+        font-size: clamp(0.5rem, 3vw, 0.9rem);;
     }
     .page {
         width: 80%;
@@ -184,16 +184,16 @@ h1 {
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .icon {
-        width: 85px;
+        width: 100px;
     }
     .icon:hover {
-        width: 105px;
+        width: 130px;
     }
     .tech-row {
         gap: 2rem;
     }
     .hover-text {
-        font-size: 10px;
+        font-size: 0.7rem;
     }
     .page {
         width: 75%;
