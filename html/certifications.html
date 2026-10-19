@@ -45,30 +45,12 @@
 
         <div class="page">
             <h1> Certifications </h1>
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../images/mos-word.png" class="d-block w-100" alt="Microsoft Office Specialist Certificate for Word 2019 Associate">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/mos-powerpoint.png" class="d-block w-100" alt="Microsoft Office Specialist Certificate for PowerPoint 2019 Associate">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/toeic-score.jpg" class="d-block w-100" alt="TOEIC Listening and Reading Official Institutional Score Report">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/its-databases.png" class="d-block w-100" alt="Information Technology Specialist for Databases">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+            <div class="cert-grid">
+                <img src="../images/mos-word.png" alt="Microsoft Office Specialist Certificate for Word 2019 Associate">
+                <img src="../images/mos-powerpoint.png" alt="Microsoft Office Specialist Certificate for PowerPoint 2019 Associate">
+                <img src="../images/toeic-score.jpg" alt="TOEIC Listening and Reading Official Institutional Score Report">
+                <img src="../images/its-databases.png" alt="Information Technology Specialist for Databases">
+            </div>
         </div>
 
         <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
@@ -82,7 +64,7 @@
         </div>
 
         <script>
-          document.querySelectorAll('.carousel-inner img').forEach(img => {
+          document.querySelectorAll('.cert-grid img').forEach(img => {
             img.style.cursor = 'pointer'; // Indicate it's clickable
             img.addEventListener('click', function () {
               const modalImage = document.getElementById('modalImage');
