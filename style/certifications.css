@@ -63,8 +63,7 @@ h1 {
     background-color: rgba(11, 11, 11, 0.69);
     padding: 2rem;
     margin: 4rem auto;
-    width: 60%;
-    max-width: 1200px;
+    max-width: 80%;
     border: 2px solid #FFF;
     border-radius: 10px;
     text-align: center;
@@ -112,18 +111,11 @@ h1 {
     h1 {
         font-size: 1rem;
     }
-}
-
-@media (max-width: 768px) {
-    .cert-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
     .cert-grid {
         grid-template-columns: 1fr;
+    }
+    .cert-item p {
+        font-size: clamp(0.3rem, 10vw, 0.5rem);
     }
 }
 
@@ -133,6 +125,13 @@ h1 {
     }
     h1 {
         font-size: 2rem;
+    }
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .cert-item p {
+        font-size: clamp(0.5rem, 10vw, 0.7rem);
     }
 }
 
@@ -166,5 +165,12 @@ h1 {
     }
     h1 {
         font-size: 2.5rem;
+    }
+    .cert-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+    .cert-item p {
+        font-size: clamp(0.6rem, 10vw, 1rem);
     }
 }
