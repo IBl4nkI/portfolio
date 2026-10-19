@@ -102,15 +102,6 @@ h1 {
     font-size: 0.9rem;
 }
 
-.icon-container:hover .hover-text {
-    visibility: visible;
-    opacity: 1;
-}
-
-.icon:hover {
-    width: clamp(130px, 10vw, 135px);
-}
-
 @media (max-width: 320px) {
     .icon {
         width: 60px;
