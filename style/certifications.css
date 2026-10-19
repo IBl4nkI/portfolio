@@ -56,7 +56,7 @@ body, p, span, div {
 h1 {
     text-align: center;
     font-size: 300%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .page {
@@ -75,7 +75,12 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
-    align-items: start;
+    align-items: end;
+}
+
+.cert-item p {
+    text-align: left;
+    font-size: 90%;
 }
 
 .cert-grid img {
@@ -85,6 +90,7 @@ h1 {
     object-fit: contain;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    margin-bottom: 1rem;
 }
 
 .cert-grid img:hover {
