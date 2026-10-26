@@ -106,9 +106,6 @@ h1 {
     .icon {
         width: 60px;
     }
-    .icon:hover {
-        width: 75px;
-    }
     .hover-text {
         font-size: 0.55rem;
     }
@@ -130,9 +127,6 @@ h1 {
 @media (min-width: 321px) and (max-width: 768px) {
     .icon {
         width: clamp(50px, 25vw, 200px);
-    }
-    .icon:hover {
-        width: 230px;
     }
     .hover-text {
         font-size: clamp(0.5rem, 3vw, 0.9rem);;
@@ -176,9 +170,6 @@ h1 {
 @media (min-width: 769px) and (max-width: 1024px) {
     .icon {
         width: 100px;
-    }
-    .icon:hover {
-        width: 130px;
     }
     .tech-row {
         gap: 2rem;
