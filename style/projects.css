@@ -58,7 +58,7 @@ h1 {
     background-color: rgba(11, 11, 11, 0.69);
     padding: 2rem;
     margin: 4rem auto;
-    max-width: 80%;
+    max-width: 1100px;
     border: 2px solid #FFF;
     border-radius: 10px;
     text-align: center;
@@ -136,6 +136,106 @@ a:active {
 
 .first-website a:hover p {
     color: white;
+}
+
+.project-detail {
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    text-align: left;
+    background: rgba(0, 0, 0, 0.42);
+    border-radius: 12px;
+}
+
+.project-separator {
+    max-width: 1000px;
+    margin: 2rem auto;
+    border-color: rgba(255, 255, 255, 0.65);
+    opacity: 0.7;
+}
+
+.project-detail h2 {
+    margin: 0 0 1.25rem;
+    text-align: center;
+    font-size: clamp(1.35rem, 3vw, 2rem);
+}
+
+.project-details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    column-gap: 1rem;
+    row-gap: 0.2rem;
+}
+
+.project-detail-column {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0;
+}
+
+.project-detail-item {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+}
+
+.project-detail-item h3 {
+    margin: 0 0 0.5rem;
+    color: #ffe45e;
+    font-size: 1.05rem;
+}
+
+.project-detail-item p,
+.project-detail-item ul {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-detail-item ul {
+    padding-left: 1.25rem;
+}
+
+.repository-links {
+    margin-top: 0.75rem !important;
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+.repository-links li + li {
+    margin-top: 0.35rem;
+}
+
+.repository-links a {
+    color: #ffe000;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+    font-weight: 600;
+}
+
+.repository-links a:hover,
+.repository-links a:focus-visible {
+    color: #fff176;
+}
+
+.repository-links a i {
+    margin-left: 0.15rem;
+    font-size: 0.8em;
+}
+
+.project-result {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+    .project-details-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-result {
+        grid-column: auto;
+    }
 }
 
 @media (max-width: 320px) {
